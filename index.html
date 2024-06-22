@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet friend</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div id="container">
+    <header>
+      <div id="logo"><h1><a href="#">Pet friend</a></h1></div>
+
+      <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#sobre-nos">Sobre Nós</a></li>
+            <li><a href="#como-chegar">Como chegar</a></li>
+            <li><a href="#fale-conosco">Fale Conosco</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="secao" id="inicio">
+        <div id="slogan">
+          <h2>Bem-vindo à <br> Família <br> Pet Friend</h2>
+          <div id="img_slogan"><a href="#">Cachorros</a></div>
+        </div>
+      </section>
+
+      <section class="secao" id="produtos">
+        <h2>Produtos</h2>
+        <ul>
+          <li id="img_racao"><a href="#"><h3>Ração</h3></a></li>
+          <li id="img_brinquedo"><a href="#"><h3>Brinquedos</h3></a></li>
+          <li id="img_acessorio"><a href="#"><h3>Acessórios</h3></a></li>
+          <li id="img_petisco"><a href="#"><h3>Petiscos</h3></a></li>
+          <li id="img_higiene"><a href="#"><h3>Higiene</h3></a></li>
+        </ul>
+      </section>
+
+      <section class="secao" id="sobre-nos">
+        <h2>Sobre Nós</h2>
+          <div class="texto">
+            <p>A Pet Friend busca garantir o melhor para os seus cães, desde atendimento veterinário e serviço de banho e tosa de confiança, à utilização de produtos de qualidade, 
+            seguros, e, principalmente, não aversivos.<br><br>
+            Idealizamos uma loja focada no bem-estar dos pets, com uma seleção de produtos que visam proporcionar qualidade de vida, estimular habilidades mentais e sensoriais 
+            dos cães e satisfazer as necessidades básicas da espécie.<br><br>
+            Contamos com uma equipe preparada para atender tutor e pet da melhor forma, reduzindo estresse e ansiedade, tudo feito com o amor e carinho que eles tanto merecem!
+            </p>
+          </div>
+        <div id="img_dog"><a href="#">Dogs</a></div>
+      </section>
+
+      <section class="secao" id="como-chegar">
+        <h2>Como Chegar</h2>
+        <div id="contato">        
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Rua do Futuro, n° 125 - Graças/PE<br><br>
+            <i class="fas fa-phone-alt"></i> Fone: (81) 3052-9965<br><br>
+            <i class="fas fa-envelope"></i> petfriend@mailinator.com
+          </p><br>
+        </div>
+        <article id="mapa">
+          <iframe width="550" height="300" style="border-radius: 20px 50px 20px 50px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2324.86500822826!2d-34.90480483757477!3d-8.036633048139327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18ff84b1ad69%3A0xba959d4f90080b74!2sParque%20da%20Jaqueira!5e0!3m2!1spt-BR!2sbr!4v1718593736682!5m2!1spt-BR!2sbr" frameborder="0"></iframe>
+        </article>
+      </section>
+
+      <section class="secao" id="fale-conosco">
+        <h2>Fale Conosco</h2>
+        <form  id="contact-form">
+          <div>
+            <label for="nome">Nome:</label>
+            <input class="campo" type="text" id="nome" placeholder=" Digite o seu nome">
+          </div>
+          <div>
+            <label for="email">E-mail:</label>
+            <input class="campo" type="text" id="email" placeholder=" Digite o seu e-mail">
+          </div>
+          <div>
+            <label for="motivo">Motivo do Contato:</label>
+            <textarea  class="campo" id="motivo" placeholder=" Digite o motivo do seu contato"></textarea >
+          </div>
+          <div class="button">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Políticas de Privacidade</p>
+      <p>2024 | Todos os Direitos Reservados por <strong>Pet Friend &copy;</strong></p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>  
+</body>
+</html>
