@@ -22,12 +22,14 @@ body {
   margin: 0 auto;
 }
 
-/*Logo */
+/* Barra de Navegação */
 
-#logo h1 {
-  float: left;
-  margin-left: 120px;
-  margin-right: 120px;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #6858EB;
+  color: #ECA634;
 }
 
 #logo a {
@@ -44,22 +46,22 @@ body {
   transform: scale(1.1);
 }
 
-/* Barra de Navegação */
-
-header {
-  background-color: #6858EB;
-  color: #ECA634;
-  overflow: hidden;
-  margin-bottom: 100px;
+#menu-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 30px;
 }
 
 nav ul {
+  display: flex;
+  align-items: center;
   list-style-type: none;
-}
-
- nav ul li {
-  float: left;
-  margin: 35px 10px;
 }
 
 nav ul li a {
@@ -82,22 +84,31 @@ nav ul li a:active {
 
 /*Slogan */
 
+#slogan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  position: relative;
+}
+
 #slogan h2 {
   background-color: #ECA634;
-  margin: 40px 110px 40px 80px;
+  margin: 0 20px;
   color: #ffffff;
   font-size: 90px;
-  padding: 60px 780px 60px 90px;
+  padding: 60px 750px 60px 60px;
   border-radius: 80px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   text-align: center;
   border: 5px solid #6858EB;
+  position: relative;
 }
 
 #img_slogan {
-  float: right;
-  margin-top: -480px;
-  margin-right: 190px;
+  position: absolute;
+  margin-left: 600px;
+  border-radius: 70px;
 }
 
 #img_slogan a {
@@ -111,7 +122,6 @@ nav ul li a:active {
   border-radius: 70px;
 }
 
-
 /*Seções */
 
 .secao {
@@ -120,13 +130,13 @@ nav ul li a:active {
   border-bottom: 10px dashed #ECA634;
   margin-bottom: 100px;
   overflow: hidden;
-  padding: 20px 0px 20px 50px;
 }
 
 .secao h2 {
   background-color: #c8dbbe;
   font-size: 35px;
   color: #6858EB;
+  padding: 20px 0px 0px 50px;
 }
 
 .secao ul {
@@ -135,7 +145,7 @@ nav ul li a:active {
 
 .secao ul li {
   display: inline-block;
-  margin: 80px 35px 120px 20px;
+  margin: 80px 35px 140px 20px;
 }
 
 .secao h3 {
@@ -170,7 +180,6 @@ nav ul li a:active {
   background-size: contain;
   border: 8px solid #6858EB;
   background-color: #ffffff;
-
 }
 
 #img_brinquedo a:hover {
@@ -187,7 +196,6 @@ nav ul li a:active {
   background-size: contain;
   border: 8px solid #6858EB;
   background-color: #ffffff;
-
 }
 
 #img_acessorio a:hover {
@@ -204,7 +212,6 @@ nav ul li a:active {
   background-size: contain;
   border: 8px solid #6858EB;
   background-color: #ffffff;
-
 }
 
 #img_petisco a:hover {
@@ -227,21 +234,24 @@ nav ul li a:active {
   transform: scale(1.1);
 }
 
-.texto {
-  float: left;
+#sobre-nos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .texto p {
   color: #6858EB;
   font-size: 20px;
   width: 800px;
-  margin-top: 70px;
-  margin-left: 40px;
   text-align: justify;
   background-color: #ffffff;
   padding: 30px;
   border-radius: 20px;
-  float: left;
+}
+
+#img_dog {
+  margin-bottom: 50px;
 }
 
 #img_dog a {
@@ -252,13 +262,13 @@ nav ul li a:active {
   display: block;
   background: url(../img/img_dog.png) no-repeat center center;
   background-size: contain;
-  float: left;
-  margin-left: 180px;
 }
 
 #img_dog a:hover {
   transform: scale(1.1);
 }
+
+/* PAREI AQUIIIIII */
 
 #contato p {
   font-family: Arial, Helvetica, sans-serif;
@@ -420,6 +430,13 @@ footer {
   }
 }
 
+@media (max-width: 1000px) {
+  nav ul li a {
+    padding: 5px 10px;
+    font-size: 22px;
+  }
+}
+
 @media (max-width: 768px) {
 
   #logo h1 {
@@ -433,6 +450,23 @@ footer {
     width: 150px;
     height: 100px;
   }
+
+  /* #menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    background-color: #6858EB;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  } */
 
   nav ul li {
     float: left;
