@@ -268,22 +268,94 @@ nav ul li a:active {
   transform: scale(1.1);
 }
 
-/* PAREI AQUIIIIII */
+#nossos-planos {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: repeat(5,1fr);
+  gap: 60px;
+  margin-bottom: 60px;
+}
 
-#contato p {
+#card { 
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: #ffffff;
+padding: 20px;
+height: 400px;
+border: 5px solid #6858EB;
+border-radius: 20px;
+}
+
+#card h3 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.preco-container {
+  display: flex;
+  align-items: baseline;
+  background-color: #c8dbbe;
+}
+
+.preco {
+  margin-right: 5px;
+}
+
+#img_plan_pet_start, #img_plan_pet_essencial, #img_plan_pet_max{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#img_plan_pet_start a {
+  width: 100px;
+  height: 100px;
+  text-indent: -9999px;
+  text-decoration: none;
+  display: block;
+  background: url(../img/icon-plan-pet-start-base.svg) no-repeat center center;
+  background-size: contain;
+}
+
+#img_plan_pet_essencial a {
+  width: 100px;
+  height: 100px;
+  text-indent: -9999px;
+  text-decoration: none;
+  display: block;
+  background: url(../img/icon-plan-pet-essential-base.svg) no-repeat center center;
+  background-size: contain;
+}
+
+#img_plan_pet_max a {
+  width: 100px;
+  height: 100px;
+  text-indent: -9999px;
+  text-decoration: none;
+  display: block;
+  background: url(../img/icon-plan-pet-max-base.svg) no-repeat center center;
+  background-size: contain;
+}
+
+#como-chegar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+  gap: 80px;
+}
+
+#contato p, #card {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 1;
   color: #6858EB;
-  float: left;
-  margin-top: 100px;
-  margin-left: 330px;
 }
 
 #mapa {
-  float: left;
-  margin-left: 250px;
-  margin-bottom: 50px;
   border: 10px solid #6858EB;
   border-radius: 20px 50px 20px 50px;
 }
@@ -300,7 +372,7 @@ form div {
   margin-bottom: 20px;
   text-align: left;
   display: inline-block;
-  width: 60%;
+  width: 50%;
 }
 
 form label {
@@ -325,7 +397,7 @@ input.campo {
 }
 
 textarea.campo {
-  height: 100px;
+  height: 80px;
 }
 
 .button {
@@ -357,11 +429,7 @@ footer {
 
 /* Responsividade */
 
-@media (min-width: 769px) and (max-width: 1650px) {
-
-  nav ul li {
-    margin: 35px 10px;
-  }
+@media (min-width: 769px) and (max-width: 1450px) {
 
   nav ul li a {
     font-size: 25px;
@@ -369,37 +437,23 @@ footer {
 
   #slogan h2 {
     font-size: 70px;
-    padding: 60px 90px;
-  }
-
-  #img_slogan {
-    float: none;
-    margin: 20px 40px;
+    padding: 40px 580px 40px 60px;
   }
 
   #img_slogan a {
-    float: none;
-    margin: auto;
+    width: 400px;
+    height: 280px;
+    padding: 0px;
   }
 
-  #img_dog {
-    float: none;
-    margin: 440px 40px 0px 40px;
-  }
-
-  #img_dog a {
-    float: none;
-    margin: auto;
-  }
-
-  .secao h2 {
+   .secao h2 {
     font-size: 30px;
   }
 
   .secao h3 {
     font-size: 22px;
   }
-
+/*
   .texto p {
     font-size: 20px;
     width: 90%;
@@ -407,18 +461,16 @@ footer {
 
   #contato {
     text-align: center;
-    float: none;
     }
   
   #contato p {
     text-align: left;
     margin: 30px auto;
-    float: none;
     display: inline-block;
   }
 
   #mapa {
-    float: none;
+    display: block;
     width: 40%;
     height: 320px;
     margin: 10px auto;
@@ -427,15 +479,16 @@ footer {
   #mapa iframe {
     width: 100%;
     height: 300px;
-  }
+  } */
 }
+/* 
 
 @media (max-width: 1000px) {
   nav ul li a {
     padding: 5px 10px;
     font-size: 22px;
   }
-}
+} 
 
 @media (max-width: 768px) {
 
@@ -449,7 +502,7 @@ footer {
     display: block;
     width: 150px;
     height: 100px;
-  }
+  } */
 
   /* #menu-toggle {
     display: block;
@@ -468,7 +521,7 @@ footer {
     text-align: center;
   } */
 
-  nav ul li {
+  /* nav ul li {
     float: left;
     display: block;
     text-align: center;
@@ -572,7 +625,5 @@ footer {
   input.campo, textarea.campo {
     width: 100%;
     font-size: 1em;
-  }
-
-}
+  } */
 
