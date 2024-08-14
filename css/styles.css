@@ -234,6 +234,10 @@ nav ul li a:active {
   transform: scale(1.1);
 }
 
+.produtos-carousel ul li {
+  padding-left: 55px;
+}
+
 #sobre-nos {
   display: flex;
   align-items: center;
@@ -348,10 +352,10 @@ border-radius: 20px;
   gap: 80px;
 }
 
-#contato p, #card {
+#contato p, #card, .plan-detail {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  line-height: 1;
+
   color: #6858EB;
 }
 
@@ -405,6 +409,11 @@ textarea.campo {
   text-align: center;
 }
 
+.button-plan {
+  margin: 25px;
+  text-align: center;
+}
+
 button {
   height: 30px;
   width: 100px;
@@ -427,12 +436,68 @@ footer {
   padding-top: 30px;
 }
 
+/* Estilos para a modal */
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  border-radius: 10px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.plan-detail {
+  padding: 25px;
+  text-align: center;
+}
+
+.plan-detail h3 {
+  margin: 0 auto 20px auto;
+  background-color: #c8dbbe;
+  display: inline-block;
+  padding: 5px;
+}
+
+.plan-detail ul {
+  margin-top: 25px;
+  text-align: left;
+  line-height: 1.5;
+}
+
 /* Responsividade */
 
-@media (min-width: 769px) and (max-width: 1450px) {
+@media (max-width: 1450px) {
 
   nav ul li a {
-    font-size: 25px;
+    font-size: calc(3vw * 3px);
   }
 
   #slogan h2 {
