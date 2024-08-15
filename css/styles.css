@@ -154,7 +154,7 @@ nav ul li a:active {
   font-size: 25px;
 }
 
-#img_racao a {
+.img_racao a {
   width: 250px;
   height: 250px;
   border-radius: 130px;
@@ -166,11 +166,11 @@ nav ul li a:active {
   background-color: #ffffff;
 }
 
-#img_racao a:hover {
+.img_racao a:hover {
   transform: scale(1.1);
 }
 
-#img_brinquedo a {
+.img_brinquedo a {
   width: 250px;
   height: 250px;
   border-radius: 130px;
@@ -182,11 +182,11 @@ nav ul li a:active {
   background-color: #ffffff;
 }
 
-#img_brinquedo a:hover {
+.img_brinquedo a:hover {
   transform: scale(1.1);
 }
 
-#img_acessorio a {
+.img_acessorio a {
   width: 250px;
   height: 250px;
   border-radius: 130px;
@@ -198,11 +198,11 @@ nav ul li a:active {
   background-color: #ffffff;
 }
 
-#img_acessorio a:hover {
+.img_acessorio a:hover {
   transform: scale(1.1);
 }
 
-#img_petisco a {
+.img_petisco a {
   width: 250px;
   height: 250px;
   border-radius: 130px;
@@ -214,11 +214,11 @@ nav ul li a:active {
   background-color: #ffffff;
 }
 
-#img_petisco a:hover {
+.img_petisco a:hover {
   transform: scale(1.1);
 }
 
-#img_higiene a {
+.img_higiene a {
   width: 250px;
   height: 250px;
   border-radius: 130px;
@@ -230,7 +230,7 @@ nav ul li a:active {
   background-color: #ffffff;
 }
 
-#img_higiene a:hover {
+.img_higiene a:hover {
   transform: scale(1.1);
 }
 
