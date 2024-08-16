@@ -1,0 +1,50 @@
+/* Responsividade */
+
+@media only screen and (max-width: 1399px) {
+
+  nav ul li a {
+    font-size: calc(3vw * 3px);
+  }
+
+  #slogan h2 {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+
+  #slogan h2 {
+    font-size: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+  #slogan {
+    flex-direction: column;
+    width: 70%;
+  }
+
+  #img_slogan {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  #slogan h2 {
+    font-size: 35px;
+  }
+
+  #img_slogan {
+    width: 80%;
+  }
+
+}
+
+@media only screen and (max-width: 481px) {
+
+}
+
+/* me basear pela resolução 320px (iphone SE) ou seja de 320 pra cima */
