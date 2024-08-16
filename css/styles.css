@@ -19,6 +19,7 @@ body {
 
 #container {
   width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -85,41 +86,30 @@ nav ul li a:active {
 /*Slogan */
 
 #slogan {
+  width: 85%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 40px 0;
-  position: relative;
+  justify-content: space-around;
+  margin: 40px auto;
+  background-color: #ECA634;
+  border: 5px solid #6858EB;
+  border-radius: 80px;
+  padding: 1rem;
 }
 
 #slogan h2 {
-  background-color: #ECA634;
   margin: 0 20px;
   color: #ffffff;
-  font-size: 90px;
-  padding: 60px 750px 60px 60px;
-  border-radius: 80px;
+  font-size: 85px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   text-align: center;
-  border: 5px solid #6858EB;
-  position: relative;
+  padding: 1rem;
 }
 
 #img_slogan {
-  position: absolute;
-  margin-left: 600px;
   border-radius: 70px;
-}
-
-#img_slogan a {
-  width: 590px;
-  height: 400px;
-  text-indent: -9999px;
-  text-decoration: none;
-  display: block;
-  background: url(../img/img_slogan.jpg) no-repeat center center;
-  background-size: contain;
-  border-radius: 70px;
+  padding: 1rem;
+  width: 45%;
 }
 
 /*Seções */
@@ -133,7 +123,6 @@ nav ul li a:active {
 }
 
 .secao h2 {
-  background-color: #c8dbbe;
   font-size: 35px;
   color: #6858EB;
   padding: 20px 0px 0px 50px;
@@ -491,204 +480,3 @@ footer {
   text-align: left;
   line-height: 1.5;
 }
-
-/* Responsividade */
-
-@media (max-width: 1450px) {
-
-  nav ul li a {
-    font-size: calc(3vw * 3px);
-  }
-
-  #slogan h2 {
-    font-size: 70px;
-    padding: 40px 580px 40px 60px;
-  }
-
-  #img_slogan a {
-    width: 400px;
-    height: 280px;
-    padding: 0px;
-  }
-
-   .secao h2 {
-    font-size: 30px;
-  }
-
-  .secao h3 {
-    font-size: 22px;
-  }
-/*
-  .texto p {
-    font-size: 20px;
-    width: 90%;
-  }
-
-  #contato {
-    text-align: center;
-    }
-  
-  #contato p {
-    text-align: left;
-    margin: 30px auto;
-    display: inline-block;
-  }
-
-  #mapa {
-    display: block;
-    width: 40%;
-    height: 320px;
-    margin: 10px auto;
-  }
-
-  #mapa iframe {
-    width: 100%;
-    height: 300px;
-  } */
-}
-/* 
-
-@media (max-width: 1000px) {
-  nav ul li a {
-    padding: 5px 10px;
-    font-size: 22px;
-  }
-} 
-
-@media (max-width: 768px) {
-
-  #logo h1 {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  #logo a {
-    margin: 0 auto;
-    display: block;
-    width: 150px;
-    height: 100px;
-  } */
-
-  /* #menu-toggle {
-    display: block;
-  }
-
-  nav ul {
-    flex-direction: column;
-    display: none;
-    position: absolute;
-    background-color: #6858EB;
-    width: 100%;
-    top: 80px;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-  } */
-
-  /* nav ul li {
-    float: left;
-    display: block;
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  nav ul li a {
-    padding: 5px 15px;
-    font-size: 20px;
-    text-align: center;
-  }
-
-  #slogan h2 {
-    font-size: 40px;
-    padding: 20px;
-    float: none;
-    margin: 20px auto;
-    width: 100%;
-    height: auto;
-  }
-
-  #img_slogan {
-    float: none;
-    margin: 20px 40px;
-  }
-
-  #img_slogan a {
-    float: none;
-    margin: auto;
-    width: 285px;
-    height: 200px;
-  }
-
-  .secao {
-    padding: 10px;
-    margin-bottom: 50px;
-  }
-
-  .secao h2 {
-    font-size: 28px;
-    margin-left: 15px;
-  }
-
-  .secao ul li{
-    margin: 25px 20px;
-    padding-bottom: 60px;
-  }
-
-  .secao h3 {
-    font-size: 20px;
-  }
-
-  .texto p {
-    width: 100%;
-    height: auto;
-    margin: 20px 0;
-  }
-
-
-  #img_dog {
-    float: none;
-    margin: 500px 40px 0px 40px;
-  }
-
-  #img_dog a {
-    width: 250px;
-    height: 235px;
-    float: none;
-    margin: auto;
-  }
-
-  #contato {
-    text-align: center;
-    float: none;
-  }
-
-  #contato p {
-    text-align: left;
-    margin: 30px auto;
-    float: none;
-    display: inline-block;
-  }
-
-  #mapa {
-    float: none;
-    width: 70%;
-    height: 220px;
-    margin: 10px auto;
-  }
-
-  #mapa iframe {
-    width: 100%;
-    height: 200px;
-  }
-
-  form {
-    margin: 20px;
-    font-size: 16px;
-  }
-
-  input.campo, textarea.campo {
-    width: 100%;
-    font-size: 1em;
-  } */
-
